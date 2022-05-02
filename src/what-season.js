@@ -12,13 +12,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
  function getSeason(date) {
-  let checkDate = Date.parse(date);
-  const errorString = 'Unable to determine the time of year!';
-  const keysData = Object.keys(date);
+  //let checkDate = Date.parse(date);
+  //const errorString = 'Unable to determine the time of year!';
+  //const keysData = Object.keys(date);
   if (!date) {
-	return 'Unable to determine the time of year!';
-  } else if (keysData.length > 0) {
-	throw new Error ('Invalid date!');
+		return 'Unable to determine the time of year!';
+  } else if (Object.keys(date).length > 0) {
+		throw new Error ('Invalid date!');
   } else if (date instanceof Date) {
 	    const spring = "spring";
 	    const winter = "winter";
